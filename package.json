@@ -7,6 +7,7 @@
     "@emotion/styled": "^11.14.1",
     "@mui/material": "^7.2.0",
     "@react-google-maps/api": "^2.20.7",
+    "@supabase/supabase-js": "^2.53.0",
     "cra-template-pwa": "2.0.0",
     "framer-motion": "^12.23.9",
     "react": "^19.1.0",
@@ -20,7 +21,6 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
-    
   },
   "eslintConfig": {
     "extends": [
