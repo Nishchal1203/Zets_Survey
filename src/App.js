@@ -5,6 +5,7 @@ import './App.css';
 import { useJsApiLoader, Autocomplete } from '@react-google-maps/api';
 import { GoogleMap, Marker, DirectionsService, DirectionsRenderer } from '@react-google-maps/api';
 import { supabase } from './supabaseClient'; // Add this at the top
+import { Analytics } from "@vercel/analytics/react";
 
 const ZetsLogo = process.env.PUBLIC_URL + '/zets_logo.png';
 // Thank you / waitlist animation
@@ -672,6 +673,7 @@ function App() {
           </Container>
         </Box>
       )}
+      <Analytics />
     </Box>
   );
 }
