@@ -2,10 +2,11 @@ import React, { useEffect, useState } from 'react';
 import { Box, Button, Typography, Container, TextField, Paper, MenuItem } from '@mui/material';
 import { motion, AnimatePresence } from 'framer-motion';
 import './App.css';
-import ZetsLogo from './zets_logo.png';
 import { useJsApiLoader, Autocomplete } from '@react-google-maps/api';
 import { GoogleMap, Marker, DirectionsService, DirectionsRenderer } from '@react-google-maps/api';
 import { supabase } from './supabaseClient'; // Add this at the top
+
+const ZetsLogo = process.env.PUBLIC_URL + '/zets_logo.png';
 // Thank you / waitlist animation
 const ThankYouScreen = ({ onContinue }) => (
   <motion.div
@@ -251,7 +252,7 @@ const SurveyForm = ({ onSubmit }) => {
                 borderColor: '#00fff7'
               }
             }}
-            onClick={() => window.open('https://instagram.com/zets', '_blank')}
+            onClick={() => window.open('https://instagram.com/zets.in', '_blank')}
           >
             📱 Instagram
           </Button>
@@ -269,9 +270,9 @@ const SurveyForm = ({ onSubmit }) => {
                 borderColor: '#00fff7'
               }
             }}
-            onClick={() => window.open('https://x.com/zets', '_blank')}
+            onClick={() => window.open('https://x.com/Zets.in', '_blank')}
           >
-            𝕏 X
+            𝕏 
           </Button>
           <Button
             variant="outlined"
